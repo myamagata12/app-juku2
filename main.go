@@ -36,7 +36,7 @@ func tozono(w http.ResponseWriter, r *http.Request) {
     rows.Next()
     rows.Scan(&body)
 // log.Print(body)
-    t , err := template.ParseFiles("tozono.tpl")
+    t , err := template.ParseFiles("main.tpl")
                 if err != nil {
                         panic(err.Error())
                 }
